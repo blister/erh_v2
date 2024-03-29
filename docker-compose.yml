@@ -1,0 +1,65 @@
+version: '3.9'
+
+# persistent database storage for mysql instance
+volumes:
+  phpainfree-datavolume:
+
+services:
+  phpainfree_dev:
+    build: ./docker/local/php
+    image: phpainfree
+    container_name: phpainfree
+    deploy:
+      resources: 
+        limits:
+          memory: 200M
+    volumes:
+      - .:/var/www/vhosts/phpainfree
+    ports:
+      - '8888:80'
+    environment:
+      COMPOSER_CACHE_DIR: './.composer_cache'
+    env_file:
+      - .env
+  
+  phpainfree_db:
+    build:
+      context: .
+      dockerfile: ./docker/local/mysql/Dockerfile
+    container_name: phpainfree-mysql
+    deploy:
+      resources: 
+        limits:
+          memory: 400M
+    image: phpainfree-mysql
+    ports:
+      - '8889:3306'
+    volumes: 
+      - phpainfree-datavolume:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: painfree
+      MYSQL_ROOT_PASSWORD: painfreeRoot
+      MYSQL_USER: painfree
+      MYSQL_PASSWORD: painfree
+
+  phpainfree_phpmyadmin:
+    deploy:
+      resources:
+        limits:
+          memory: 200M
+    build:
+      context: .
+      dockerfile: ./docker/local/phpmyadmin/Dockerfile
+    container_name: phpainfree-phpmyadmin
+    depends_on:
+      - 'phpainfree_db'
+    links:
+      - 'phpainfree_db:db'
+    ports: 
+      - 8000:80
+    environment:
+      MYSQL_ROOT_PASSWORD: painfreeRoot
+      MYSQL_USER: painfree
+      MYSQL_PASSWORD: painfree
+      PMA_USER: painfree
+      PMA_PASSWORD: painfree
