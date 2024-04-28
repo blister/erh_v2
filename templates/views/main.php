@@ -98,11 +98,11 @@
 				<div>
 					<a href="https://makestartups.com">
 						<figure>
-								<img loading="lazy" src="/images/ms-logo-white-rect.png" alt="Make Startups, Inc logo">
+								<img loading="lazy" src="/images/logos/ms-logo-white-rect.png" alt="Make Startups, Inc logo">
 							<figcaption><cite>https://makestartups.com</cite></figcaption>
 						</figure>
 					</a>
-					<table>
+					<table style="width:100%;">
 						<thead>
 							<tr>
 								<th colspan="2">Startup Scorecard</th>
@@ -227,12 +227,12 @@
 						<img
 							style="background-color: #fff; border-radius: 15px;"
 							loading="lazy"
-							src="/images/docket.png"
+							src="/images/logos/docket.png"
 							alt="Docket Technologies, Inc logo"
 						>
 						<figcaption><cite>https://getdocket.com</cite> (closed)</figcaption>
 					</figure>
-					<table>
+					<table style="width:100%;">
 						<thead>
 							<tr>
 								<th colspan="2">Startup Scorecard</th>
@@ -305,10 +305,10 @@
 			<div class="two-columns">
 				<div>
 					<figure>
-						<img loading="lazy" src="/images/moonrise.jpg" alt="Moonrise, Inc logo">
+						<img loading="lazy" src="/images/logos/moonrise.jpg" alt="Moonrise, Inc logo">
 						<figcaption><cite>https://moonrise.works</cite> (closed)</figcaption>
 					</figure>
-					<table>
+					<table style="width:100%;">
 						<thead>
 							<tr>
 								<th colspan="2">Startup Scorecard</th>
@@ -390,12 +390,90 @@
 			</div>
 		</section>
 
-		<hr>
+		<hr style="margin-top:8em;">
 
 		<a name="opensource"></a>
 		<h2>Open Source and Other Things...</h2>
 		<section id="opensource">
-			<h3>PHPainfree v2</h3>
+			<h2>I love code</h2>
+			<p>
+				I'm very passionate about writing software to make the world a 
+				better place, and nothing embodies that quite like Open Source 
+				contributions. I agree with most of the principles of the Open Source 
+				movement, just with slightly less fervor than some of my peers.
+			</p>
+			<h3>More than a hobby, less than a lifestyle...</h3>
+			<p>
+				I love building businesses with software, so I think there must 
+				exist a place between rigid adherence to Free Software principles 
+				and closed-source walled gardens. Whenever possible, I release and 
+				contribute to Open Source projects that I am passionate about,
+				and take a pragmatic approach to companies built using proprietary software.
+			</p>
+			<h3><a href="https://github.com/blister">Follow me on Github</a></h3>
+		</section>
+
+		<h2 style="margin-top:4em;">Notable Projects</h2>
+		<hr>
+		<section id="painfree">
+			<h2>PHPainfree</h2>
+			<div class="two-columns">
+				<div>
+					<figure>
+						<img loading="lazy" src="/images/logos/PHPainfree2-logo-rect-nobg.png" alt="PHPainfree2 Logo">
+					</figure>
+				</div>
+				<div>
+					<table style="width:100%;">
+						<thead>
+							<tr>
+								<th colspan="3">Library</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row" style="text-align:right;color:#ccc;">Docs</td>
+								<td style="font-weight:bold;">
+									<a href="https://php.programming-is-easy.com">web docs</a>
+								</td>
+								<td style="text-alicen:center;">
+									<i class="fa-brands fa-php"></i>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row" style="font-family:monospace;text-align:right;color:#ccc;">Source</td>
+								<td style="font-weight:bold;">
+									<a href="https://github.com/Programming-is-Easy/PHPainfree">Github</a>
+								</td>
+								<td style="text-alicen:center;"></td>
+							</tr>
+							<tr>
+								<td scope="row" style="text-align:right;color:#ccc;">Fork</td>
+								<td>
+									<a
+										class="github-button"
+										href="https://github.com/Programming-Is-Easy/PHPainfree/fork"
+										data-size="large"
+										aria-label="Fork Programming-Is-Easy/PHPainfree on GitHub"
+									>PHPainfree</a>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row" style="text-align:right;color:#ccc;">Star</td>
+								<td>
+									<a
+										class="github-button"
+										href="https://github.com/Programming-Is-Easy/PHPainfree"
+										data-size="large"
+										data-show-count="true"
+										aria-label="Star Programming-Is-Easy/PHPainfree on GitHub"
+									>Star</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 			<p>
 				I started PHPainfree on April 21st, 2010 to win an argument with 
 				<a href="https://twitter.com/walesmd">Mike Wales</a>. At the time,
@@ -422,12 +500,14 @@
 				capable of doing just what needs to be done and not spend hours fighting with opaque 
 				documentation and bizarre framework methods.
 			</p>
-			<h3>Enter htmx</h3>
-			<p>
-				<a href="https://htmx.org">htmx</a> is to Javascript frameworks as PHPainfree is to web frameworks. It's such a great 
-				system that I went and built a second version of PHPainfree to natively support htmx structures 
-				out of the box.
-			</p>
+			<aside>
+				<h3>Enter htmx</h3>
+				<p>
+					<a href="https://htmx.org">htmx</a> is to Javascript frameworks as PHPainfree is to web frameworks. It's such a great 
+					system that I went and built a second version of PHPainfree to natively support htmx structures 
+					out of the box.
+				</p>
+			</aside>
 			<p>
 				With the power and speed of PHP version 8, speedy development environments powered by 
 				<a href="https://docker.com">Docker</a>, and lightweight modern interactivity provided by 
@@ -438,4 +518,75 @@
 				Get it today at <a href="https://php.programming-is-easy.com">php.programming-is-easy</a> and 
 				on Github at <a href="https://github.com/Programming-Is-Easy/PHPainfree">@Programming-Is-Easy/PHPainfree</a>.
 			</p>
+		</section>
+
+		<hr style="margin-top:4em;">
+
+		<section id="tabpad">
+			<h2>TabPad</h2>
+			<p>
+				I live inside my browser. One thing that has always frustrated me is that 
+				I'll often need to type in a complicated URL or need to reference some notes while typing.
+				Before browsers like Google Chrome turned their URL bar into a complicated "let's actually do a Google Search"
+				smart bar, I'd type little notes like IP addresses and such in the address bar to reference on the 
+				page. 
+			</p>
+			<p>
+				I was playing around with Chrome Extensions and decided that what I really wanted was a nice 
+				persistent "notepad" built in to my browser. Both Chrome and Firefox allow you to 
+				override the default page displayed when you open a new tab, and that was the inspiration 
+				for TabPad.
+			</p>
+
+			<div class="two-columns">
+				<div>
+					<table style="width:100%;">
+						<thead>
+							<tr>
+								<th colspan="3">Extension</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row" style="text-align:right;color:#ccc;">Chrome</td>
+								<td style="font-weight:bold;">
+									<a href="https://chromewebstore.google.com/detail/tabpad/egicgkjdobefbigmkkkgdanmfobgcafb">Web Store</a>
+								</td>
+								<td style="text-alicen:center;">
+									<i class="fa-brands fa-chrome"></i>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row" style="font-family:monospace;text-align:right;color:#ccc;">Source</td>
+								<td style="font-weight:bold;">
+									<a href="https://github.com/blister/tabpad">Github</a>
+								</td>
+								<td style="text-alicen:center;"></td>
+							</tr>
+							<tr>
+								<td scope="row" style="text-align:right;color:#ccc;">Firefox</td>
+								<td style="font-weight:bold;">
+									<a href="https://addons.mozilla.org/en-US/firefox/addon/tabpad/">MZ Addons</a>
+								</td>
+								<td style="text-alicen:center;">
+									<i class="fa-brands fa-firefox-browser"></i>
+								</td>
+							</tr>
+							<tr>
+								<td scope="row" style="font-family:monospace;text-align:right;color:#ccc;">FF Source</td>
+								<td style="font-weight:bold;">
+									<a href="https://github.com/blister/tabpad-ff">Github</a>
+								</td>
+								<td style="text-alicen:center;"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<figure>
+						<img loading="lazy" src="/images/logos/tabpad.jpg" alt="TabPad Screenshot">
+						<figcaption><cite>TabPad in Action</cite></figcaption>
+					</figure>
+				</div>
+			</div>
 		</section>

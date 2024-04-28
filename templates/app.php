@@ -46,6 +46,9 @@ if ( $App->htmx && ! $App->htmx_boosted && file_exists("{$App->BASE_PATH}/templa
 		<link href="/css/prism.min.css" rel="stylesheet" />
 		<script src="/js/prism.min.js"></script>
 
+		<!-- font awesome --> 
+		<script src="https://kit.fontawesome.com/377fddedbd.js" crossorigin="anonymous"></script>
+
 		<!-- Dynamically load our css/js resources by "view" -->
 		<!-- View-specific CSS -->
 		<?= $Painfree->load_css($App->view); ?> 
