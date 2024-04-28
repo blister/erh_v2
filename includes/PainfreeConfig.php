@@ -62,13 +62,6 @@ $PainfreeConfig = array(
 	// leave the array empty for no DB connection
 	// 'Database' => array(),
 	'Database' => array(
-		'PrimaryDB' => array(
-			'host'   => $_ENV['MYSQL_HOST'],
-			'user'   => $_ENV['MYSQL_USER'],
-			'pass'   => $_ENV['MYSQL_PASSWORD'],
-			'schema' => $_ENV['MYSQL_DATABASE'],
-			'port'   => $_ENV['MYSQL_PORT'],
-		),
 	),
 
 	/*
