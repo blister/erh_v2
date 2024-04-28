@@ -1,4 +1,6 @@
 <?php
+global $App, $Painfree;
+
 if ( $App->htmx && ! $App->htmx_boosted && file_exists("{$App->BASE_PATH}/templates/views/{$App->view}.php") ) {
 	// If we are an htmx request and the "view" variable exists in the top-level
 	// templates folder, render that as an HTMX snippet.
@@ -23,6 +25,7 @@ if ( $App->htmx && ! $App->htmx_boosted && file_exists("{$App->BASE_PATH}/templa
 	}
 } else { 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -30,12 +33,9 @@ if ( $App->htmx && ! $App->htmx_boosted && file_exists("{$App->BASE_PATH}/templa
 
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 
-		<!-- bootstrap used in example page. Not required by PHPainfree -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
-		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="/css/styles.css" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
-	
+		<link rel="stylesheet" href="https://unpkg.com/normalize.css">
+		<link rel="stylesheet" href="https://unpkg.com/magick.css">
+
 		<!-- htmx -->
 		<script src="https://unpkg.com/htmx.org@1.9.5"></script>
 
@@ -56,22 +56,26 @@ if ( $App->htmx && ! $App->htmx_boosted && file_exists("{$App->BASE_PATH}/templa
 		<!-- Special PHPainfree demo development CSS -->
 		<?= $Painfree->load_css('painfree_development'); ?> 
 	</head>
-	<body id="app-body" class="bg-dark text-light">
-
+	<body id="app-body" class="">
+		<main>
 <?php
 		include $Painfree->load_view('header');
 		include $Painfree->load_view($App->view, '404');
 		include $Painfree->load_view('footer');
 ?>
+		
+		</main>
 
 <?php
 	// TODO: If you're going to use a debug template in a production environment,
 	// you will want to do a permissions check here to only show it to people with
 	// "developer" permissions in your product.
 	if ( isset($_ENV['ENVIRONMENT']) && $_ENV['ENVIRONMENT'] === 'development' ) {
-		include $Painfree->load_view('debug');
+		//include $Painfree->load_view('debug');
 	}
 ?>
+
+
 	</body>
 </html>
 

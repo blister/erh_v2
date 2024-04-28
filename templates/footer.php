@@ -1,33 +1,24 @@
-
+<?php 
+	global $__painfree_start_time;
+?>
         <footer class="py-5 bg-dark">
-            <div class="container px-5">
-				<div class="row">
-					<div class="col-4">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link p-0 pb-1" href="https://github.com/Programming-is-Easy/PHPainfree/blob/main/LICENSE">BSD-3 License</a>	
-							</li>
-							<li class="nav-item">
-								<a class="nav-link p-0 pb-1" href="https://github.com/Programming-is-Easy/PHPainfree/blob/main/CONTRIBUTING.md">Contribute</a>	
-							</li>
-							<li class="nav-item">
-								<a class="nav-link p-0 pb-1" href="https://discord.gg/4vsqB87">Join us on Discord</a>	
-							</li>
-							<li class="nav-item">
-								<a class="nav-link p-0 pb-1" href="https://programming-is-easy.com">Programming is Easy</a>	
-							</li>
-						</ul>
-					</div>
-					<div class="col-4">
-						<p class="m-0 text-center text-white">
-							Copyright &copy;<?= date('Y'); ?> <a href="https://github.com/Programming-is-Easy/PHPainfree">PHPainfree</a>
-						</p>
-					</div>
-					<div class="col-4">
-						<p class="mb-3 text-end">
-							<code class="text-light">Page generated in: <span class="text-info"><?= sprintf('%0.4f', (microtime(true) - $__painfree_start_time)) . 's'; ?></span> 🔥🔥</code>
-						</p>
-					</div>
-				</div>
-			</div>
+			<hr>
+			<p>
+				Made using <a href="https://github.com/Programming-is-Easy/PHPainfree">PHPainfree</a>, 
+				<a href="https://htmx.org">htmx</a>, and 
+				<a href="https://github.com/wintermute-cell/magick.css">magick.css</a>
+			</p>
+			<p>
+				Copyright &copy;<?= date('Y'); ?> Eric Ryan Harrison
+			</p>
+			<p>
+				<a href="https://github.com/blister">Github</a>, 
+				<a href="https://discord.gg/4vsqB87">Discord</a>, 
+				<a href="https://cofounderos.com/user/1">CofounderOS</a>, 
+				<a href="https://twitter.com/blister">Twitter</a>, 
+				<a href="https://linkedin.com/in/ericryanharrison">LinkedIn</a>
+			</p>
+			<p>
+				<code class="text-light">Page generated in: <span class="text-info"><?= sprintf('%0.4f', (microtime(true) - $__painfree_start_time)) . 's'; ?></span> 🔥🔥</code>
+			</p>
         </footer>

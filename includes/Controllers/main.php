@@ -1,4 +1,4 @@
 <?php
-	// do nothing
-	
-	$this->title('Welcome to PHPainfree Version 2!');
+	global $App;
+
+	$App->title('Eric Ryan Harrison Builds Things');

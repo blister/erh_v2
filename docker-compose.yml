@@ -16,7 +16,7 @@ services:
     volumes:
       - .:/var/www/vhosts/phpainfree
     ports:
-      - '8888:80'
+      - '9111:80'
     environment:
       COMPOSER_CACHE_DIR: './.composer_cache'
     env_file:
@@ -33,7 +33,7 @@ services:
           memory: 400M
     image: phpainfree-mysql
     ports:
-      - '8889:3306'
+      - '9222:3306'
     volumes: 
       - phpainfree-datavolume:/var/lib/mysql
     environment:
@@ -56,7 +56,7 @@ services:
     links:
       - 'phpainfree_db:db'
     ports: 
-      - 8000:80
+      - 9333:80
     environment:
       MYSQL_ROOT_PASSWORD: painfreeRoot
       MYSQL_USER: painfree
