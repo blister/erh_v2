@@ -367,8 +367,8 @@
 						to earn a little extra income on the side.<span class="sidenote-anchor"></span>
 						<span class="sidenote">
 							In the nearly five years we were in business, we helped put over
-							$1,200,000 into the hands of our hard-working team members in the 
-							greater Chicago-land region and filled over 14,000 shifts.
+							$1,400,000 into the hands of our hard-working team members in the 
+							greater Chicago-land region and filled over 18,000 shifts.
 						</span>
 					</p>
 					<p>
