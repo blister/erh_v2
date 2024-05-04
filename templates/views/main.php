@@ -324,7 +324,7 @@
 							<tr>
 								<td scope="row" style="text-align:right;color:#ccc;">Worker Payouts</td>
 								<td style="font-weight:bold;">
-									&gt; $1,200,000	
+									&gt; $1,400,000	
 								</td>
 								<td style="text-align:center;font-weight:500;">💰</td>
 							</tr>
@@ -352,7 +352,7 @@
 							<tr>
 								<td scope="row" style="text-align:right;color:#ccc;">Shifts</td>
 								<td style="font-weight:bold;">
-									14,000+
+									18,000+
 								</td>
 								<td style="text-align:center;font-weight:500;">⏱️</td>
 							</tr>
